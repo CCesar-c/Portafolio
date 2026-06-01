@@ -13,7 +13,7 @@ export default function CardProjeto({ projeto }) {
           {/* Imagem */}
           <div className="relative overflow-hidden h-48 bg-gradient-to-br from-indigo-400 to-pink-400">
             <img
-              src={projeto.imagem }
+              src={projeto.img }
               alt={projeto.nome}
               className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
             />

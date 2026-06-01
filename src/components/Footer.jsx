@@ -1,12 +1,14 @@
 import { motion } from 'framer-motion';
-
+import { FaGithub } from 'react-icons/fa6';
+import { MdOutlineMailOutline } from 'react-icons/md';
+import { FaLinkedin } from "react-icons/fa";
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: '💼', name: 'LinkedIn', url: 'https://linkedin.com' },
-    { icon: '💻', name: 'GitHub', url: 'https://github.com/CCesar-c' },
-    { icon: '✉️', name: 'Email', url: 'mailto:SIM' },
+    { icon: <FaLinkedin />, name: 'LinkedIn', url: 'https://linkedin.com' },
+    { icon: <FaGithub />, name: 'GitHub', url: 'https://github.com/CCesar-c' },
+    { icon: <MdOutlineMailOutline />, name: 'Email', url: 'mailto:SIM' },
   ];
 
   return (

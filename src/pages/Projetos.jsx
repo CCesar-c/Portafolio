@@ -74,12 +74,11 @@ export default function Projetos() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-6xl">
           <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">Estatísticas</h2>
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             {[
               { number: projetos.length, label: 'Projetos Completados' },
               { number: '15+', label: 'Tecnologias' },
               { number: '2+', label: 'Anos de Experiência' },
-              { number: '100%', label: 'Satisfação do Cliente' },
             ].map((stat, idx) => (
               <motion.div
                 key={idx}
@@ -89,7 +88,7 @@ export default function Projetos() {
                 transition={{ delay: idx * 0.1 }}
                 className="card text-center"
               >
-                <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-indigo-600 to-pink-600 bg-clip-text text-transparent mb-2">
+                <div className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-indigo-600 to-pink-600 bg-clip-text text-transparent mb-2">
                   {stat.number}
                 </div>
                 <p className="text-gray-600 font-semibold">{stat.label}</p>
