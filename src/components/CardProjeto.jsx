@@ -13,7 +13,7 @@ export default function CardProjeto({ projeto }) {
           {/* Imagem */}
           <div className="relative overflow-hidden h-48 bg-gradient-to-br from-indigo-400 to-pink-400">
             <img
-              src={projeto.imagem}
+              src={projeto.imagem }
               alt={projeto.nome}
               className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
             />
@@ -29,24 +29,17 @@ export default function CardProjeto({ projeto }) {
 
             {/* Descrição */}
             <p className="text-gray-600 text-sm mb-4 flex-1">
-              {projeto.descricaoCurta}
+              {projeto.descricao}
             </p>
 
             {/* Tecnologias */}
             <div className="flex flex-wrap gap-2 mb-4">
-              {projeto.tecnologias.slice(0, 3).map((tech) => (
                 <span
-                  key={tech}
+                  key={0}
                   className="skill-tag text-xs"
                 >
-                  {tech}
+                  {projeto.linguages}
                 </span>
-              ))}
-              {projeto.tecnologias.length > 3 && (
-                <span className="text-xs text-gray-500">
-                  +{projeto.tecnologias.length - 3}
-                </span>
-              )}
             </div>
 
             {/* Botão */}

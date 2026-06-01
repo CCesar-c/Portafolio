@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import CardProjeto from '../components/CardProjeto';
-export const projetos = []
+import projetos from '../api/projectos.json'
 
 
 export default function Projetos() {

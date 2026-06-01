@@ -1,0 +1,36 @@
+[
+    {
+        "id": 0,
+        "name": "AppTicketCatina",
+        "descricao": "App de ticket de uma cantina",
+        "linguages": "JS , biblioteca, supabase(PG)",
+        "slug": "atc"
+    },
+    {
+        "id": 1,
+        "name": "jogo space invader ",
+        "descricao": "Jogo de naves que atira",
+        "linguages": "JS , biblioteca",
+        "slug": "jsi",
+        "img":"",
+        "repositorio":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMzwLNzjGEeDQUmZJ8n0qvO7sS5_JTSCLqjQ&s"
+    },
+    {
+        "id": 2,
+        "name": "ECM",
+        "descricao": "Um jogo de tiro ",
+        "linguages": "C# , biblioteca",
+        "slug": "ecm",
+        "img":"",
+        "repositorio":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMzwLNzjGEeDQUmZJ8n0qvO7sS5_JTSCLqjQ&s"
+    },
+    {
+        "id": 3,
+        "name": "IDE JS",
+        "descricao": "Editor de codigo online",
+        "linguages": "JS , biblioteca",
+        "slug": "ide",
+        "img":"",
+        "repositorio":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMzwLNzjGEeDQUmZJ8n0qvO7sS5_JTSCLqjQ&s"
+    }
+]
