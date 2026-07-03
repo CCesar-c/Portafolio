@@ -21,7 +21,7 @@ export default function DetalheProjeto() {
   }
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen flex flex-col " >
       {/* Hero Section */}
       <motion.section
         initial={{ opacity: 0 }}
@@ -47,15 +47,16 @@ export default function DetalheProjeto() {
 
       {/* Content */}
       <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 max-w-4xl ">
+        <div  className="container mx-auto px-4 max-w-4xl ">
           {/* Objetivo */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1}}
+            transition={{ delay: 1 }}
             className="mb-12 p-6 bg-indigo-50 rounded-lg border-l-4 border-indigo-600"
-          >
-            <h2 className="text-2xl font-bold text-indigo-600 mb-3">🎯 Objetivo do Projeto</h2>
+            style={{ gap:10 }}
+            >
+            <h2 className="text-2xl max-w-4xl font-bold text-indigo-600 mb-3">🎯 Objetivo do Projeto</h2>
             <p className="text-gray-700 text-lg">{projeto.descricao}</p>
           </motion.div>
 
@@ -66,7 +67,7 @@ export default function DetalheProjeto() {
             transition={{ delay: 0.6 }}
             className="mb-102 p-6 bg-green-50 rounded-lg border-l-4 border-green-500"
           >
-            <h2 className="text-2xl font-bold text-green-700 mb-3">📚 Aprendizados Obtidos</h2>
+            <h2 className="text-2xl max-w-4xl font-bold text-green-700 mb-3">📚 Aprendizados Obtidos</h2>
             <p className="text-gray-700 text-lg leading-relaxed">{projeto.linguages}</p>
           </motion.div>
 

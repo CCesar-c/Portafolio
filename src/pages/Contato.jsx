@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { FaGithub } from 'react-icons/fa6';
 import { useState } from 'react';
 
 export default function Contato() {
@@ -49,7 +50,7 @@ export default function Contato() {
       link: 'https://linkedin.com',
     },
     {
-      icon: '💻',
+      icon: <FaGithub style={{ height: 100, width: 100, color:"gray" }} />,
       title: 'GitHub',
       value: 'github.com/seuusuario',
       link: 'https://github.com',
@@ -65,7 +66,7 @@ export default function Contato() {
         transition={{ duration: 0.8 }}
         className="bg-gradient-to-br from-indigo-600 to-pink-600 text-white py-20 pt-32"
       >
-        <div className="container mx-auto px-4 max-w-6xl text-center">
+        <div className="container mx-auto max-w-6xl text-center flex flex-col items-center justify-center p-6">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Entre em Contato</h1>
           <p className="text-xl text-white/90 max-w-2xl mx-auto">
             Estou sempre aberto a novas oportunidades, projetos interessantes e conversas sobre tecnologia
@@ -88,7 +89,7 @@ export default function Contato() {
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
                 whileHover={{ y: -5 }}
-                className="card text-center group cursor-pointer"
+                className="flex flex-col items-center justify-center p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 group"
               >
                 <div className="text-6xl mb-4 group-hover:scale-110 transition-transform duration-300">
                   {info.icon}
@@ -137,9 +138,8 @@ export default function Contato() {
                 <h3 className="font-bold text-gray-800 mb-4">Siga-me nas Redes Sociais</h3>
                 <div className="flex gap-4">
                   {[
-                    { icon: '💼', url: 'https://linkedin.com' },
+                    { icon: (<FaGithub />), url: 'https://linkedin.com' },
                     { icon: '💻', url: 'https://github.com' },
-                    { icon: '🐦', url: 'https://twitter.com' },
                   ].map((social, idx) => (
                     <motion.a
                       key={idx}

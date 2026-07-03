@@ -33,9 +33,9 @@ export default function Projetos() {
         transition={{ duration: 0.8 }}
         className="bg-linear-to-br from-indigo-600 to-pink-600 text-white py-20 pt-32"
       >
-        <div className="container mx-auto px-4 max-w-6xl text-center items-center justify-center">
+        <div className="container mx-auto px-4 max-w-6xl text-center items-center justify-center flex flex-col items-center justify-center p-6  ">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Meus Projetos</h1>
-          <p className="text-xl text-white/90 max-w-2xl mx-auto ">
+          <p className="text-xl text-white/90 max-w-2xl mx-auto  ">
             Explore meu portfólio de projetos desenvolvidos com tecnologias modernas e boas práticas de engenharia
           </p>
         </div>
