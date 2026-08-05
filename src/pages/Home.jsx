@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 export default function Home() {
+  alert("Refazer")
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -80,7 +81,7 @@ export default function Home() {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="text-xl md:text-3xl text-indigo-200 mb-4 font-semibold"
           >
-            Desenvolvedor Full Stack 
+            Desenvolvedor Full Stack
           </motion.p>
 
           {/* Tagline */}
@@ -134,13 +135,13 @@ export default function Home() {
             <div>
               <h2 className="text-4xl font-bold mb-6 text-gray-800">Sobre Mim</h2>
               <p className="text-gray-600 text-lg leading-relaxed mb-4">
-                Sou um desenvolvedor apaixonado com experiência em criar aplicações web modernas e escaláveis. 
-                Com formação em Engenharia de Software, combino conhecimentos técnicos sólidos com uma visão criativa 
+                Sou um desenvolvedor apaixonado com experiência em criar aplicações web modernas e escaláveis.
+                Com formação em Engenharia de Software, combino conhecimentos técnicos sólidos com uma visão criativa
                 para resolver problemas complexos.
               </p>
               <p className="text-gray-600 text-lg leading-relaxed">
-                Minha jornada profissional me ensinou a valorizar a qualidade do código, a experiência do usuário 
-                e a colaboração efetiva em equipe. Estou sempre buscando aprender novas tecnologias e aplicar 
+                Minha jornada profissional me ensinou a valorizar a qualidade do código, a experiência do usuário
+                e a colaboração efetiva em equipe. Estou sempre buscando aprender novas tecnologias e aplicar
                 as melhores práticas de desenvolvimento.
               </p>
             </div>
