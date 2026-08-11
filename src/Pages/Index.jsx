@@ -1,8 +1,12 @@
-import "../Styles/style.css"
+import "../Styles/style.css";
+import Header from "../Components/Header.jsx";
+
 export default function Index() {
- return (
-   <div>
-     <h1>Ola, meu nome é Cesar Colmenarez</h1>
-   </div>
- )
+  return (
+    <div id="body">
+      <Header />
+      <div style={{ backgroundColor: "blue" }}></div>
+      <div style={{ backgroundColor: "red" }}></div>
+    </div>
+  );
 }

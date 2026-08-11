@@ -1,0 +1,31 @@
+* {
+  scrollbar-width: none;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+#body {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: grid;
+}
+#body div {
+  width: 100vw;
+  height: 50vh;
+}
+#header {
+  display: flex;
+  background-color: purple;
+  min-height: 5vh;
+  min-width: 100vw;
+  position: fixed;
+  top: 2px;
+  padding: 5px;
+  z-index: 100;
+  border-radius: 5px;
+  align-items: center;
+}
