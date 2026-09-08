@@ -22,7 +22,7 @@ export default function Index() {
       </div>
       <Divisor />
       <div id="second">
-        <h2>linguagem com que trabalho</h2>
+        <h2>Linguagem que domino e uso</h2>
       </div>
       <Footer />
     </div>
