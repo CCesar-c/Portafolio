@@ -1,4 +1,7 @@
 import Index from "../Pages/Index";
+import Projetos from "../Pages/Projetos";
+import Detalhes from "../Pages/Detalhes";
+import Contatos from "../Pages/Contatos";
 const rotas = [
   {
     id: 0,
@@ -10,19 +13,19 @@ const rotas = [
     id: 1,
     path: "/projetos",
     name: "projeto",
-    element: <Index />,
+    element: <Projetos />,
   },
   {
     id: 2,
     path: "/detalhesProjeto",
     name: "detalhesProjeto",
-    element: <Index />,
+    element: <Detalhes />,
   },
   {
     id: 3,
     path: "/contatos",
     name: "contatos",
-    element: <Index />,
+    element: <Contatos />,
   },
 ];
 

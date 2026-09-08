@@ -1,14 +1,10 @@
-/* :root {
-  --azul_claro: #1591dc;
-  --azul_oscuro: #2c5ead;
-  --azul_mas_clarito: #4bb8fa;
-  --clarito: #c4e2f5;
-} */
 :root {
-  --grizesito: #2d2d2d;
-  --negrito: #181818;
-  --negrito_mas_claro: #262626;
+  --negrito: #000000;
+  --grizesito: #bdc4bddd;
   --blanquito: #e6e4e4;
+  --verde_ft: #20ac1e;
+  --verdesito: #2af234cc;
+  --verde_leve:#3d8b3f65;
 }
 * {
   scrollbar-width: none;
@@ -17,12 +13,12 @@
   margin: 0px;
 }
 
-body {
+/* body {
   min-height: 100vh;
   min-width: 100vw;
   background-color: var(--negrito);
 }
-
+ */
 #body {
   min-height: 100vh;
   min-width: 100vw;
@@ -35,35 +31,31 @@ body {
 
 #header {
   display: flex;
-  background-color: var(--grizesito);
-  min-height: 15vh;
+  background-color: var(--negrito);
+  height: 100px;
   width: 100%;
   max-width: 100vw;
   position: sticky;
   padding: 10px;
-  z-index: 100;
+  top: 0;
+
   gap: 5px;
   flex-direction: row;
   border-radius: 0px 0px 10px 10px;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 2px 20px var(--grizesito);
+  box-shadow: 0px 2px 10px var(--grizesito);
 }
 
 #footer {
-  position: absolute;
+  position: relative;
   bottom: 0px;
   border-top: 2.5px solid var(--blanquito);
-  background-color: var(--grizesito);
+  background-color: var(--negrito);
   height: 100px;
   min-width: 100vw;
 }
 
-a {
-  font-size: 23px;
-  /* text-decoration: none; */
-  color: white;
-}
 #primary {
   margin: 10px;
   padding: 10px;
@@ -74,6 +66,7 @@ a {
   min-height: 49vh;
   height: stretch;
   width: 100vw;
+
 }
 #second {
   background-color: var(--negrito);
@@ -82,8 +75,25 @@ a {
   width: 100vw;
 }
 #card {
-  background-color: var(--grizesito);
+  background-color: var(--negrito);
   height: stretch;
   margin: 10px;
   width: 100vw;
+}
+#globo{
+  background: radial-gradient(at ecllipse top red,(at ecllipse top blue)
+}
+
+h3 {
+  color: var(--grizesito);
+}
+h2 {
+  text-align: center;
+  color: var(--blanquito);
+}
+
+a {
+  font-size: 23px;
+  /* text-decoration: none; */
+  color: var(--verde_leve);
 }

@@ -2,6 +2,7 @@ import "../Styles/style.css";
 import Header from "../Components/Header.jsx";
 import Footer from "../Components/Footer.jsx";
 import Divisor from "../Components/Divisor.jsx";
+import foto from "../Public/images.png"
 export default function Index() {
   return (
     <div id="body">
@@ -9,17 +10,20 @@ export default function Index() {
       <div id="primary">
         <div id="card">
           <h3>
-            Ola, seja bem-vindo ao meu portifolio... O meu nome e cesar gosta de
+            <h2>Ola, seja bem-vindo ao meu portifolio...</h2>
+            O meu nome e cesar gosto de
             aprender programação e novas tecnicas de fazer mais optimzas e
             melhores com mais fluidez.
           </h3>
         </div>
         <div id="card">
-          <img src="" />
+          <img src={foto.toString()} height={"100%"}  width={"100%"}/>
         </div>
       </div>
       <Divisor />
-      <div id="second"></div>
+      <div id="second">
+        <h2>linguagem com que trabalho</h2>
+      </div>
       <Footer />
     </div>
   );
