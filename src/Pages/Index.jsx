@@ -3,6 +3,8 @@ import Header from "../Components/Header.jsx";
 import Footer from "../Components/Footer.jsx";
 import Divisor from "../Components/Divisor.jsx";
 import foto from "../Public/images.png"
+import Globo from "../Components/Globo.jsx"
+import All from "../Services/All.json"
 export default function Index() {
   return (
     <div id="body">
@@ -17,12 +19,20 @@ export default function Index() {
           </h3>
         </div>
         <div id="card">
-          <img src={foto.toString()} height={"100%"}  width={"100%"}/>
+          <img src={foto.toString()} height={"100%"} width={"100%"} />
         </div>
       </div>
       <Divisor />
       <div id="second">
         <h2>Linguagem que domino e uso</h2>
+        {
+          //All.Linguagens.map((lgn, i) => {
+          alert(All[0].Linguagens[0])
+          /* return (
+            <Globo key={i} nome={lgn.Linguagem.name} />
+          ) */
+        //})
+        }
       </div>
       <Footer />
     </div>

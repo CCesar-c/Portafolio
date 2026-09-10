@@ -1,21 +1,22 @@
-{
-  "Projetos": [
-    {
-      "id": 0,
-      "nome": "App_organizar",
-      "descrição": "Um app para organizar seu dia a dia com recordatorios",
-      "img": "..."
-    }
-  ],
-  "Linguagens": [
-    {
-      "id": 0,
-      "name": ""
-    }
-  ],
-    {
-      "id": 0,
-      "name": ""
-    }
-  ]
-}
+[
+  {
+    "Projetos": [
+      {
+        "id": 0,
+        "nome": "App_organizar",
+        "descrição": "Um app para organizar seu dia a dia com recordatorios",
+        "img": "..."
+      }
+    ],
+    "Linguagens": [
+      {
+        "id": 0,
+        "name": "js"
+      },
+      {
+        "id": 0,
+        "name": "c#"
+      }
+    ]
+  }
+]
