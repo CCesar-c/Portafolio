@@ -2,7 +2,7 @@ export default function Divisor({ altura = "10px", largura = "99vw" }) {
   return (
     <div
       style={{
-        backgroundColor: "white",
+        backgroundColor: "var(--grizesito)",
         height: `${altura}`,
         width: `${largura}`,
         borderRadius: 10,

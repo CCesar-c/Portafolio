@@ -94,6 +94,13 @@
   }
 }
 
+.content-languages{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    line-clamp: 2;
+}
+
 h3 {
   color: var(--grizesito);
 }
