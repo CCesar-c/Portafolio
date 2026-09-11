@@ -4,8 +4,9 @@
   --blanquito: #e6e4e4;
   --verde_ft: #20ac1e;
   --verdesito: #2af234cc;
-  --verde_leve:#3d8b3f65;
+  --verde_leve: #3d8b3f65;
 }
+
 * {
   scrollbar-width: none;
   box-sizing: border-box;
@@ -68,42 +69,57 @@
   width: 100vw;
 
 }
+
 #second {
+  display: flex;
+  align-items: center;
+  justify-content: top;
   background-color: var(--negrito);
+  flex-direction: column;
   min-height: 49vh;
   height: stretch;
   width: 100vw;
+  padding-block: 10px;
+  border: 0px solid green;
 }
+
 #card {
   background-color: var(--negrito);
   height: stretch;
   margin: 10px;
   width: 100vw;
 }
-.globo{
+
+.globo {
   display: flex;
-  height: auto;
+  height: 50px;
   width: 100px;
   padding: 10px;
   border-radius: 50px;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   background-color: var(--verde_leve);
-  & h6{
+
+  & h6 {
     color: var(--grizesito);
+    font-size: 15px;
   }
 }
 
-.content-languages{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    line-clamp: 2;
+.content-languages {
+  height: 100%;
+  width: 100%;
+  row-gap: 10px;
+  padding: 10px;
+  border: 0px solid red;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
 }
 
 h3 {
   color: var(--grizesito);
 }
+
 h2 {
   text-align: center;
   color: var(--blanquito);

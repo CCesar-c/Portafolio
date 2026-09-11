@@ -32,6 +32,41 @@
       {
         "id": 5,
         "name": "Typescript"
+      },
+      {
+        "id":6,
+        "name":"Python"
+      }
+    ],
+    "Framework": [
+      {
+        "id": 0,
+        "name": "react"
+      },
+      {
+        "id": 1,
+        "name": "react-native"
+      }
+    ],
+    "Bibliotecas": [
+      {
+        "id": 0,
+        "name": "Nodejs"
+      },
+      {
+        "id":1,
+        "name":"Axios"
+      },
+      {
+        "id":2,
+        "name":"Node-js"
+      },
+      {
+        "id":3,
+        "name":"Frame motion"
+      },
+      {
+        
       }
     ]
   }
