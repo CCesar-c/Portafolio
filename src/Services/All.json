@@ -36,6 +36,10 @@
       {
         "id":6,
         "name":"Python"
+      },
+      {
+        "id":7,
+        "name":"Sql"
       }
     ],
     "Framework": [
@@ -46,6 +50,18 @@
       {
         "id": 1,
         "name": "react-native"
+      },
+      {
+        "id":2,
+        "name":"Express"
+      },
+      {
+        "id":3,
+        "name":"Cypress"
+      },
+      {
+        "id":4,
+        "name":"Selenium"
       }
     ],
     "Bibliotecas": [
@@ -59,15 +75,51 @@
       },
       {
         "id":2,
-        "name":"Node-js"
+        "name":"Sequelize"
       },
       {
         "id":3,
-        "name":"Frame motion"
+        "name":"Motion"
       },
       {
-        
+        "id":4,
+        "name":"Tkinder"
       }
+    ],
+    "Ferramentas":[
+      {
+        "id": 0,
+        "name": "Visual Studio Code"
+      },
+      {
+        "id": 1,
+        "name": "Unity"
+      },
+      {
+        "id": 2,
+        "name": "Postman"
+      },
+      {
+        "id": 3,
+        "name": "Visual Studio"
+      },
+      {
+        "id": 4,
+        "name": "PgAdmin"
+      },
+      {
+        "id": 5,
+        "name": "MySql"
+      },
+      {
+        "id": 6,
+        "name": "Android Studio"
+      },
+      {
+        "id": 7,
+        "name": "Github"
+      }
+
     ]
   }
 ]

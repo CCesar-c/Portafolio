@@ -71,11 +71,11 @@
 }
 
 #second {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
   align-items: center;
   justify-content: top;
   background-color: var(--negrito);
-  flex-direction: column;
   min-height: 49vh;
   height: stretch;
   width: 100vw;
@@ -96,6 +96,7 @@
   width: 100px;
   padding: 10px;
   border-radius: 50px;
+  text-align: center;
   align-items: center;
   justify-content: center;
   background-color: var(--verde_leve);
@@ -115,6 +116,11 @@
   display: grid;
   grid-template-columns: repeat(4,1fr);
 }
+#content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 
 h3 {
   color: var(--grizesito);
@@ -129,4 +135,12 @@ a {
   font-size: 23px;
   /* text-decoration: none; */
   color: var(--verde_leve);
+}
+
+@media screen and (max-width:700px){
+    .content-languages {
+
+      grid-template-columns: repeat(2,1fr);
+    }
+
 }
