@@ -22,7 +22,7 @@
  */
 #body {
   min-height: 100vh;
-  min-width: 100vw;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -74,7 +74,7 @@
   display: grid;
   grid-template-columns: repeat(2,1fr);
   align-items: center;
-  justify-content: top;
+  justify-content: center;
   background-color: var(--negrito);
   min-height: 49vh;
   height: stretch;
@@ -99,6 +99,7 @@
   text-align: center;
   align-items: center;
   justify-content: center;
+  z-index: 100;
   background-color: var(--verde_leve);
 
   & h6 {
@@ -110,16 +111,24 @@
 .content-languages {
   height: 100%;
   width: 100%;
-  row-gap: 10px;
-  padding: 10px;
-  border: 0px solid red;
+  row-gap: 5px;
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  grid-template-columns: repeat(5,1fr);
 }
+
 #content{
     display: flex;
     flex-direction: column;
     text-align: center;
+    height: 100%;
+    width: 100%;
+    min-height: 150px;
+    min-width: 500px;
+    align-items: center;
+    justify-content: center;
 }
 
 h3 {
@@ -139,7 +148,6 @@ a {
 
 @media screen and (max-width:700px){
     .content-languages {
-
       grid-template-columns: repeat(2,1fr);
     }
 
