@@ -8,10 +8,10 @@ import foto from "../Public/images.png";
 import All from "../Services/All.json";
 
 const grupos = [
-  { chave: "Linguagens", titulo: "linguagens", classe: "group--lang" },
-  { chave: "Framework", titulo: "frameworks", classe: "group--framework" },
-  { chave: "Bibliotecas", titulo: "bibliotecas", classe: "group--lib" },
-  { chave: "Ferramentas", titulo: "ferramentas", classe: "group--tools" },
+  { chave: "Linguagens", titulo: "Linguagens", classe: "group--lang" },
+  { chave: "Framework", titulo: "Frameworks", classe: "group--framework" },
+  { chave: "Bibliotecas", titulo: "Bibliotecas", classe: "group--lib" },
+  { chave: "Ferramentas", titulo: "Ferramentas", classe: "group--tools" },
 ];
 
 export default function Index() {
@@ -20,7 +20,6 @@ export default function Index() {
   return (
     <div id="body">
       <Header />
-
       <main className="page">
         <section className="hero">
           <article className="file">
@@ -119,7 +118,7 @@ export default function Index() {
 
         <section>
           <h2 className="section__title">
-            <span className="cm">// </span>o que eu uso no dia a dia
+            <span className="cm">// </span>O que eu uso no dia a dia
           </h2>
 
           <div className="stack">
@@ -143,7 +142,6 @@ export default function Index() {
           </div>
         </section>
       </main>
-
       <Footer />
     </div>
   );
