@@ -12,19 +12,19 @@ const rotas = [
   {
     id: 1,
     path: "/projetos",
-    name: "projeto",
+    name: "Projeto",
     element: <Projetos />,
   },
   {
     id: 2,
     path: "/detalhesProjeto",
-    name: "detalhesProjeto",
+    name: "DetalhesProjeto",
     element: <Detalhes />,
   },
   {
     id: 3,
     path: "/contatos",
-    name: "contatos",
+    name: "Contatos",
     element: <Contatos />,
   },
 ];

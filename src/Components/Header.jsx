@@ -5,7 +5,7 @@ import {useEffect } from "react";
 import { motion } from "motion/react";
 
 export default function Header() {
-  
+
   return (
     <motion.div
       id="header"
@@ -20,18 +20,18 @@ export default function Header() {
       {rotas.map((rt) => {
       /* alert(window.location.pathname === rt.pathname)
       alert(window.location.pathname === rt.pathname ? "gray" : "black") */
-        return rt.name !== "detalhesProjeto" ? (
-          <Link  key={rt.id} 
+        return rt.name !== "DetalhesProjeto" ? (
+          <Link  key={rt.id}
             to={rt.path}
             style={{color:
               (window.location.pathname == rt.path ?
                "var(--verdesito)" : "var(--verde_leve)") }}
             >
-            {rt.name}
+            {window.location.pathname == rt.path ? ("🟢 " + rt.name) :rt.name }
           </Link>
         ) : null
       })}
-      {window.location.pathname == rotas[2].path && <Link  key={rotas[2].id} 
+      {window.location.pathname == rotas[2].path && <Link  key={rotas[2].id}
             to={rotas[2].path}
             style={{color:"var(--verdesito)" }}
             >
