@@ -373,6 +373,7 @@ button:focus-visible {
     height: auto;
 }
 .cardprojeto{
+  
   background: var(--comment) ;
   
 }
