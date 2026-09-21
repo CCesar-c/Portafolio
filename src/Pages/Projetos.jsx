@@ -7,10 +7,9 @@ export default function Projetos() {
     <div id="body">
       <Header />
       <main className="page" >
-        {All["Projetos"].map((pt) => {
-          return (
-            <CardProjetos />
-          )
+        
+        {All[0].Projetos.map((pt) =>{
+        <CardProjetos />
         })}
       </main>
       <Footer />

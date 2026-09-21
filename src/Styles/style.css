@@ -372,7 +372,10 @@ button:focus-visible {
     width: 100%;
     height: auto;
 }
-
+.cardprojeto{
+  background: var(--comment) ;
+  
+}
 /* Chips: un color por categoría, igual que el resaltado por tipo de token */
 .globo {
     display: inline-flex;
