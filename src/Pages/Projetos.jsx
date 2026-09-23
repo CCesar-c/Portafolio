@@ -6,10 +6,13 @@ export default function Projetos() {
   return (
     <div id="body">
       <Header />
-      <main className="page" >
-        
-        {All[0].Projetos.map((pt) =>{
-        <CardProjetos />
+      <main className="grid_page" >
+
+        {All[0].Projetos.map((pt, i) => {
+          let { id, nome, descricao, img} = pt;
+          return (
+            <CardProjetos key={i} id={id} nome={nome} descricao={descricao} img={img} />
+          )
         })}
       </main>
       <Footer />

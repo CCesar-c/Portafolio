@@ -4,7 +4,6 @@ import Header from "../Components/Header.jsx";
 import Footer from "../Components/Footer.jsx";
 import Divisor from "../Components/Divisor.jsx";
 import Globo from "../Components/Globo.jsx";
-import foto from "../Public/images.png";
 import All from "../Services/All.json";
 
 const grupos = [
@@ -96,7 +95,7 @@ export default function Index() {
           </article>
 
           <aside className="hero__side">
-            <img className="avatar" src={foto} alt="Foto do César" />
+            <img className="avatar" src={All[0].avatar} alt="Foto do César" />
             <p className="hero__lead">
               Trabalho com aplicações web e mobile do banco de dados até a
               interface. Gosto de refatorar até o código ficar{" "}

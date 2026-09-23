@@ -1,12 +1,13 @@
 [
   {
+    "avatar": "/src/Public/images.png",
     "Projetos": [
-      {
-        "id": 0,
-        "nome": "App_organizar",
-        "descrição": "Um app para organizar seu dia a dia com recordatorios",
-        "img": "..."
-      }
+        {
+          "id": 0,
+          "nome": "App_organizar",
+          "descricao": "Um app para organizar seu dia a dia com recordatorios",
+          "img": "/src/Public/images.png"
+        }
     ],
     "Linguagens": [
       {

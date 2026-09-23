@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap");
+
 /* ============================================================
    Paleta: resaltado de sintaxis sobre fondo de editor
    ============================================================ */
@@ -12,12 +13,18 @@
     --text-soft: #8b93a7;
     --comment: #5c6370;
 
-    --keyword: #c678dd; /* import, const, return */
-    --string: #e5c07b; /* "textos" */
-    --fn: #61afef; /* funciones */
-    --type: #56b6c2; /* tipos, tags */
-    --entity: #e06c75; /* nombres, props */
-    --ok: #98c379; /* valores, éxito */
+    --keyword: #c678dd;
+    /* import, const, return */
+    --string: #e5c07b;
+    /* "textos" */
+    --fn: #61afef;
+    /* funciones */
+    --type: #56b6c2;
+    /* tipos, tags */
+    --entity: #e06c75;
+    /* nombres, props */
+    --ok: #98c379;
+    /* valores, éxito */
 
     /* alias para los componentes que ya usaban estos nombres */
     --negrito: var(--bg);
@@ -116,6 +123,15 @@ button:focus-visible {
 /* ============================================================
    Estructura de página
    ============================================================ */
+.grid_page {
+    display: grid;
+    min-height: 100vh;
+    width: 100vw;
+    padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
 .page {
     flex: 1;
     width: 100%;
@@ -159,12 +175,15 @@ button:focus-visible {
     border-radius: 50%;
     background: var(--line);
 }
+
 .file__dot:nth-child(1) {
     background: red;
 }
+
 .file__dot:nth-child(2) {
     background: yellow;
 }
+
 .file__dot:nth-child(3) {
     background: limegreen;
 }
@@ -189,7 +208,7 @@ button:focus-visible {
 }
 
 .line {
-  display: block;
+    display: block;
 }
 
 .line::before {
@@ -205,25 +224,32 @@ button:focus-visible {
 .kw {
     color: var(--keyword);
 }
+
 .st {
     color: var(--string);
 }
+
 .fn {
     color: var(--fn);
 }
+
 .ty {
     color: var(--type);
 }
+
 .en {
     color: var(--entity);
 }
+
 .ok {
     color: var(--ok);
 }
+
 .cm {
     color: var(--comment);
     font-style: italic;
 }
+
 .pn {
     color: var(--text-soft);
 }
@@ -372,11 +398,40 @@ button:focus-visible {
     width: 100%;
     height: auto;
 }
-.cardprojeto{
-  
-  background: var(--comment) ;
-  
+
+.cardprojetos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 350px;
+    border-radius: var(--radius);
+    width: 250px;
+    padding: 10px;
+
+
+    h5 {
+        max-width: 25ch;
+        padding: 5px;
+        margin: 5px;
+        color: var(--ok);
+        border: var(--panel-alt) solid 1px;
+        background: var(--bg);
+        border-radius: var(--radius);
+
+    }
+
+    background: var(--panel);
+
+    img {
+        border: var(--panel-alt) solid 1px;
+        border-radius: var(--radius);
+        height: 100px;
+        width: 100px;
+    }
+
 }
+
 /* Chips: un color por categoría, igual que el resaltado por tipo de token */
 .globo {
     display: inline-flex;
@@ -402,12 +457,15 @@ button:focus-visible {
 .group--lang .globo h6 {
     color: var(--keyword);
 }
+
 .group--framework .globo h6 {
     color: var(--fn);
 }
+
 .group--lib .globo h6 {
     color: var(--type);
 }
+
 .group--tools .globo h6 {
     color: var(--string);
 }
@@ -415,12 +473,15 @@ button:focus-visible {
 .group--lang .globo:hover {
     border-color: var(--keyword);
 }
+
 .group--framework .globo:hover {
     border-color: var(--fn);
 }
+
 .group--lib .globo:hover {
     border-color: var(--type);
 }
+
 .group--tools .globo:hover {
     border-color: var(--string);
 }
@@ -461,17 +522,21 @@ a {
     .hero {
         grid-template-columns: 1fr;
     }
+
     .hero__side {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
     }
+
     .hero__lead {
         flex: 1 1 18rem;
     }
+
     .hero__cta {
         flex-basis: 100%;
     }
+
     .stack {
         grid-template-columns: 1fr;
     }
@@ -482,16 +547,19 @@ a {
         gap: 0.6rem;
         padding: 0 0.75rem;
     }
+
     #header a {
         font-size: 0.82rem;
     }
+
     .avatar {
         width: 88px;
         height: 88px;
     }
 }
 
-@media (prefers-reduced-motion: reduce) {
+/* esta dando error en el carret*/
+/* @media (prefers-reduced-motion: reduce) {
     *,
     *::before,
     *::after {
@@ -500,4 +568,4 @@ a {
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
-}
+} */

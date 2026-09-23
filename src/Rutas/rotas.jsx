@@ -17,7 +17,7 @@ const rotas = [
   },
   {
     id: 2,
-    path: "/detalhesProjeto",
+    path: "/detalhesProjeto/:id",
     name: "DetalhesProjeto",
     element: <Detalhes />,
   },
