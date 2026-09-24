@@ -6,7 +6,13 @@
           "id": 0,
           "nome": "App_organizar",
           "descricao": "Um app para organizar seu dia a dia com recordatorios",
-          "img": "/src/Public/images.png"
+          "img": "/src/Public/images.png",
+          "github":"https://github.com/CCesar-c/APP_ORGANIZAR.git"
+        },
+        {
+          "id":1,
+          "nome": "App ticket cantina"
+
         }
     ],
     "Linguagens": [

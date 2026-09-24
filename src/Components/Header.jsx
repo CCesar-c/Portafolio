@@ -30,20 +30,15 @@ export default function Header() {
             {window.location.pathname == rt.path ? (" -> " + rt.name + " <- ") : rt.name}
           </Link>
         ) :
-          window.location.pathname == rotas[2].path && <Link key={rotas[2].id}
+          window.location.pathname.includes("/detalhesProjeto/") && <Link key={rotas[2].id}
             to={rotas[2].path}
             style={{ color: "var(--verdesito)" }}
           >
             {" -> " + rotas[2].name + " <- "}
           </Link>
 
-      })}
-      {/* {window.location.pathname == rotas[2].path && <Link key={rotas[2].id}
-        to={rotas[2].path}
-        style={{ color: "var(--verdesito)" }}
-      >
-        {" -> " + rotas[2].name + " <- "}
-      </Link>} */}
+      })
+      }
     </motion.div>
   );
 }

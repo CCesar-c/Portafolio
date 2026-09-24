@@ -10,9 +10,7 @@ export default function CardProjetos({ id, nome, descricao, img = null }) {
       <h5>id: {id}</h5>
       <h5>nome: {nome}</h5>
       <h5>descricao: {descricao}</h5>
-      <button className="btn" onClick={() =>{
-        <Link to={`/detalhesProjeto/${id}`} />
-      }} >Ver detalhes</button>
+      <Link className="btn" to={`/detalhesProjeto/${id}`}>Ver detalhes</Link>
     </motion.div>
   )
 }
