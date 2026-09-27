@@ -12,11 +12,16 @@ export default function Detalhes() {
       <main className="flex_page">
         <div className="box_page" >
           <img src={All[0].Projetos[Number(id)].img} />
-          <h4>{All[0].Projetos[Number(id)].nome}</h4>
-          <h4>{All[0].Projetos[Number(id)].descricao}</h4>
-          <a href={All[0].Projetos[Number(id)].github}>
-            <IoLogoGithub height={100} width={100} />
-          Github</a>
+          <br /> 
+          <h2>{All[0].Projetos[Number(id)].nome}</h2>
+          <h4>{All[0].Projetos[Number(id)].descricao_completa}</h4>
+          <br /> 
+          <a href={All[0].Projetos[Number(id)].github} 
+            style={{ textDecoration:"none", color:"black", background:"var(--text)", padding:"5px", borderRadius:"var(--radius)", textAlign:"center", display:"flex", alignItems:"center", justifyContent:"center", flexDirection:"row", backdropFilter:"blur(10)" }}
+        >
+            <IoLogoGithub  style={{ height:"40px", width:"40px" }}  />
+           <h5 style={{ margin:"10px", fontSize:"20px" }} >Github</h5>
+          </a>
         </div>
       </main>
       <Footer />

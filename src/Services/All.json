@@ -2,18 +2,22 @@
   {
     "avatar": "/src/Public/images.png",
     "Projetos": [
-        {
-          "id": 0,
-          "nome": "App_organizar",
-          "descricao": "Um app para organizar seu dia a dia com recordatorios",
-          "img": "/src/Public/images.png",
-          "github":"https://github.com/CCesar-c/APP_ORGANIZAR.git"
-        },
-        {
-          "id":1,
-          "nome": "App ticket cantina"
-
-        }
+      {
+        "id": 0,
+        "nome": "App Organizar",
+        "descricao": "Um app para organizar seu dia a dia com recordatorios",
+        "descricao_completa": "Um app para organizar seu dia a dia com recordatorios do sistema  ",
+        "img": "/src/Public/images.png",
+        "github": "https://github.com/CCesar-c/APP_ORGANIZAR.git"
+      },
+      {
+        "id": 1,
+        "nome": "Ticket Cantina",
+        "descricao": "Um app de cantima onde registra e compra comida",
+        "img": "/src/Public/images.png",
+        "descricao_completa": "Um app de cantina onde o cliente consegue comprar muita comida diferente",
+        "github": "https://github.com/CCesar-c/AppTicketCatina.git"
+      }
     ],
     "Linguagens": [
       {
@@ -41,12 +45,12 @@
         "name": "Typescript"
       },
       {
-        "id":6,
-        "name":"Python"
+        "id": 6,
+        "name": "Python"
       },
       {
-        "id":7,
-        "name":"Sql"
+        "id": 7,
+        "name": "Sql"
       }
     ],
     "Framework": [
@@ -59,16 +63,16 @@
         "name": "react-native"
       },
       {
-        "id":2,
-        "name":"Express"
+        "id": 2,
+        "name": "Express"
       },
       {
-        "id":3,
-        "name":"Cypress"
+        "id": 3,
+        "name": "Cypress"
       },
       {
-        "id":4,
-        "name":"Selenium"
+        "id": 4,
+        "name": "Selenium"
       }
     ],
     "Bibliotecas": [
@@ -77,23 +81,23 @@
         "name": "Nodejs"
       },
       {
-        "id":1,
-        "name":"Axios"
+        "id": 1,
+        "name": "Axios"
       },
       {
-        "id":2,
-        "name":"Sequelize"
+        "id": 2,
+        "name": "Sequelize"
       },
       {
-        "id":3,
-        "name":"Motion"
+        "id": 3,
+        "name": "Motion"
       },
       {
-        "id":4,
-        "name":"Tkinder"
+        "id": 4,
+        "name": "Tkinder"
       }
     ],
-    "Ferramentas":[
+    "Ferramentas": [
       {
         "id": 0,
         "name": "Visual Studio Code"
@@ -126,7 +130,6 @@
         "id": 7,
         "name": "Github"
       }
-
     ]
   }
 ]
