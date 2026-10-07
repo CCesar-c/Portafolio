@@ -16,8 +16,10 @@ export default function Detalhes() {
           <h2>{All[0].Projetos[Number(id)].nome}</h2>
           <h4>{All[0].Projetos[Number(id)].descricao_completa}</h4>
           <br /> 
-          <a href={All[0].Projetos[Number(id)].github} 
-            style={{ textDecoration:"none", color:"black", background:"var(--text)", padding:"5px", borderRadius:"var(--radius)", textAlign:"center", display:"flex", alignItems:"center", justifyContent:"center", flexDirection:"row", backdropFilter:"blur(10)" }}
+          <a
+            href={All[0].Projetos[Number(id)].github} 
+            
+            style={{ textDecoration:"none", color:"black", background:"var(--text)", padding:"5px", borderRadius:"var(--radius)", textAlign:"center", display:"flex", alignItems:"center", justifyContent:"center", flexDirection:"row", backdropFilter:"blur(10)"}}
         >
             <IoLogoGithub  style={{ height:"40px", width:"40px" }}  />
            <h5 style={{ margin:"10px", fontSize:"20px" }} >Github</h5>
